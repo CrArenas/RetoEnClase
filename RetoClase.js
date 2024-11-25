@@ -32,18 +32,18 @@ function validarCorreo() {
 }
 
 function validarContrasena() {
-    let passUno = document.getElementById("PasswordUno");
+    let pass1 = document.getElementById("PasswordUno");
     let passDos = document.getElementById("PasswordDos");
     
-    if (passUno.value === passDos.value) {
-        passUno.classList.add("bueno");
+    if (pass1.value === passDos.value) {
+        pass1.classList.add("bueno");
         passDos.classList.add("bueno");
-        passUno.classList.remove("malo");
+        pass1.classList.remove("malo");
         passDos.classList.remove("malo");
     } else {
-        passUno.classList.add("malo");
+        pass1.classList.add("malo");
         passDos.classList.add("malo");
-        passUno.classList.remove("bueno");
+        pass1.classList.remove("bueno");
         passDos.classList.remove("bueno");
     }
 }
